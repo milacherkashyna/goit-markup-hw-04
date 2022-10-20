@@ -95,12 +95,20 @@ img {
   color: var(--dark);
   text-decoration: none;
 }
+.header-contacts-link svg {
+  fill: var(--grey);
+}
 .header-contacts-link {
-  display: block;
+  display: flex;
+  align-items: center;
+  gap: 10px;
   padding-top: 20px;
   padding-bottom: 20px;
   color: var(--grey);
   text-decoration: none;
+}
+.header-contacts-link:hover svg {
+  fill: var(--blue);
 }
 .header-menu-link:hover,
 .header-contacts-link:hover,
@@ -114,9 +122,26 @@ img {
 }
 /* Header end */
 .hero {
+  /* position: relative; */
+  max-width: 1600px;
+  margin: 0 auto;
   padding: 200px 0;
-  background-color: var(--dark-grey);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/img_hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  /* background-image: url(../images/img_hero.jpg); */
 }
+/* .hero::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(47, 48, 58, 0.4);
+   } */
 .hero-title {
   max-width: 696px;
   margin: 0 auto;
@@ -127,6 +152,8 @@ img {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--white);
+  /* position: relative;
+  z-index: 2; */
 }
 .hero-btn {
   display: block;
@@ -142,6 +169,8 @@ img {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   cursor: pointer;
+  /* position: relative;
+  z-index: 2; */
 }
 /* Hero end */
 .scr-reader {
@@ -158,7 +187,16 @@ img {
 }
 .advantages-block {
   width: 270px;
-  }
+}
+.advantages-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 10px;
+  margin-bottom: 30px;
+  background: var(--lightgrey);
+  border-radius: 4px;
+}
 .advantages-block:not(:last-child) {
   margin-right: 30px;
 }
@@ -262,17 +300,17 @@ img {
   list-style: none;
 }
 .footer-contacts-item {
-  margin-bottom:  9px;
+  margin-bottom: 9px;
 }
 .footer-contacts-adress {
   display: block;
-  
+
   text-decoration: none;
   color: var(--white);
 }
 .footer-contacts-link {
   display: block;
-  
+
   text-decoration: none;
   color: var(--opasity);
 }
@@ -290,7 +328,7 @@ img {
   gap: 8px;
   margin-bottom: 50px;
   justify-content: center;
- }
+}
 .portfolio-filters-btn {
   padding: 6px 22px;
   font-weight: 500;
@@ -324,6 +362,10 @@ img {
   margin-left: 30px;
   list-style: none;
   background-color: var(--white);
+}
+.card:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .card-descr {
   padding: 20px 24px;
