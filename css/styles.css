@@ -7,6 +7,7 @@
   --dark-grey: #2f303a;
   --grey: #757575;
   --semigrey: #ececec;
+  --bordergrey: #afb1b8;
   --border-grey: #eeeeee;
   --lightgrey: #f5f4fa;
   --blue: #2196f3;
@@ -33,7 +34,6 @@ body {
   padding: 0 15px;
   margin: 0 auto;
 }
-
 h1,
 h2,
 h3,
@@ -234,7 +234,6 @@ img {
 .directions-list {
   display: flex;
   flex-wrap: wrap;
-  /* justify-content: space-between; */
   gap: 30px;
   list-style: none;
 }
@@ -244,7 +243,6 @@ img {
 .team-list {
   display: flex;
   flex-wrap: wrap;
-  /* justify-content: space-between; */
   gap: 30px;
   list-style: none;
 }
@@ -272,10 +270,40 @@ img {
   letter-spacing: 0.03em;
   color: var(--grey);
 }
+/*Clients Section*/
+.clients-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+  gap: 30px;
+  justify-content: center;
+}
+.clients-card {
+  /* width: 170px;
+  height: 92px;
+  display: flex;
+  align-items: center;
+  justify-content: center; */
+  border: 1px solid var(--bordergrey);
+  border-radius: 4px;
+}
+.client-icon-box {
+}
+.client-icon {
+}
 /* Main end */
 .footer {
   padding: 60px 0;
   background-color: var(--dark-grey);
+}
+.footer-logo-contacts {
+margin-right: 70px;
+}
+.footer-info {
+  display: flex;
+  align-items: baseline;
+ 
 }
 .footer-logo {
   display: block;
@@ -319,6 +347,40 @@ img {
 .footer-contacts-link:hover,
 .footer-contacts-link:focus {
   color: var(--blue);
+}
+.join {
+padding-top: 12px;
+}
+.join-title {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white);
+}
+.join-list {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+}
+.social-icons {
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  fill: var(--white);
+  border-radius: 50%;
+  /* transition: background-color 250ms var(--timing-function);  */
+}
+.social-icons:hover,
+.social-icons:focus {
+  background-color: var(--blue);
 }
 /* Index.html end */
 /* Portfolio.html */
