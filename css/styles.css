@@ -121,6 +121,7 @@ img {
   margin-left: auto;
 }
 /* Header end */
+
 .hero {
   /* position: relative; */
   max-width: 1600px;
@@ -287,13 +288,14 @@ img {
   border-radius: 50%;
   cursor: pointer;
   transition: ease-in-out 0.4s;
-  /* transition: background-color 250ms var(--timing-function);  */
+  /* transition: background-color 250ms var(--timing-function); */
 }
 .members-social-icons:hover,
 .members-social-icons:focus {
   fill: var(--white);
   background-color: var(--blue);
 }
+
 /*Clients Section*/
 .clients-list {
   display: flex;
@@ -305,28 +307,20 @@ img {
 }
 .clients-card {
   width: 170px;
-  height: 92px;
+  height: 92px; 
+}
+.clients-card-ref {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid green;
+  border: 1px solid var(--bordergrey);
   border-radius: 4px;
-}
-
-.clients-icon {
-  display: block;
-  justify-content:center;
-  align-items: center;
-  background-color: var(--white);
-  fill: red;
+  fill: var(--bordergrey);
   cursor: pointer;
   transition: ease-in-out 0.4s;
 }
-
-.clients-icon:hover,
-.clients-icon:focus {
-  fill: var (--blue);
-  background-color:#2196f3
+.clients-card-ref:hover {
+  fill: #2196f3;
 }
 
 /* Main end */
@@ -340,7 +334,6 @@ margin-right: 70px;
 .footer-info {
   display: flex;
   align-items: baseline;
- 
 }
 .footer-logo {
   display: block;
@@ -452,6 +445,7 @@ padding-top: 12px;
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .card-set {
+  display:flex;
   flex-wrap: wrap;
   margin-top: -30px;
   margin-left: -30px;
@@ -463,6 +457,9 @@ padding-top: 12px;
   margin-left: 30px;
   list-style: none;
   background-color: var(--white);
+}
+.card-interactive {
+  display: block;
 }
 
 .card-interactive:hover,
