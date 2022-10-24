@@ -107,7 +107,8 @@ img {
   color: var(--grey);
   text-decoration: none;
 }
-.header-contacts-link:hover svg {
+.header-contacts-link:hover svg,
+.header-contacts-link:focus svg {
   fill: var(--blue);
 }
 .header-menu-link:hover,
@@ -193,7 +194,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 25px 10px;
+  height: 120px;
   margin-bottom: 30px;
   background: var(--lightgrey);
   border-radius: 4px;
@@ -313,16 +314,20 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
+  height: 100%;
   border: 1px solid var(--bordergrey);
   border-radius: 4px;
   fill: var(--bordergrey);
   cursor: pointer;
   transition: ease-in-out 0.4s;
 }
-.clients-card-ref:hover {
-  fill: #2196f3;
+.clients-card-ref:hover,
+.clients-card-ref:focus {
+  fill:var(--blue);
+  border-color:var(--blue);
 }
-
+/* В секції з клієнтами в стані ховеру і фокусу має змінюватися колір бордера + іконки мають змінювати колір також в стані фокусу. */
 /* Main end */
 .footer {
   padding: 60px 0;
@@ -377,9 +382,6 @@ margin-right: 70px;
 .footer-contacts-link:hover,
 .footer-contacts-link:focus {
   color: var(--blue);
-}
-.join {
-padding-top: 12px;
 }
 .join-title {
   display: block;
